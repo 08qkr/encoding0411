@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미니언즈 바나나 게임</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="minion-bg">
+    <div class="goggle-strap"></div>
+    <div class="minion-eye-container">
+      <div class="minion-eye">
+        <div class="eye-pupil"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <header class="header">
+      <h1>🍌 BANANA GAME 🍌</h1>
+      <div class="stats">
+        <div class="score-board">SCORE: <span id="score">0</span></div>
+        <div class="timer-board">TIME: <span id="timer">120</span>s</div>
+      </div>
+    </header>
+
+    <div class="grid-wrapper">
+      <div id="game-board"></div>
+    </div>
+    
+    <!-- Start Screen Overlay -->
+    <div class="overlay active" id="start-screen">
+      <div class="result-modal">
+        <h2>🍌 BANANA GAME 🍌</h2>
+        <p>클릭하여 숫자들의 합을 10으로 맞추세요!</p>
+        <button id="start-btn">GAME START</button>
+      </div>
+    </div>
+
+    <!-- Result Screen Overlay -->
+    <div class="overlay" id="result-screen">
+      <div class="result-modal">
+        <h2>TIME'S UP!</h2>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <button id="restart-btn">PLAY AGAIN</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
